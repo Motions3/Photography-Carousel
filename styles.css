@@ -1,3 +1,4 @@
+/* Base styles for larger screens */
 body {
     font-family: 'Young Serif', serif;
     margin: 0;
@@ -28,7 +29,7 @@ h1 {
     overflow: hidden;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel {
@@ -67,4 +68,29 @@ h1 {
 
 .carousel-button:active {
     transform: scale(0.95);
+}
+
+/* Media queries for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-button {
+        padding: 8px 16px;
+    }
 }
